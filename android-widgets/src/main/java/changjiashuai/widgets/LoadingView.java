@@ -12,6 +12,8 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import changjiashuai.utils.DensityUtils;
+import changjiashuai.widgets.indicator.BallClipRotateIndicator;
+import changjiashuai.widgets.indicator.BallGridPulseIndicator;
 import changjiashuai.widgets.indicator.BallPulseIndicator;
 import changjiashuai.widgets.indicator.BaseIndicator;
 
@@ -141,8 +143,10 @@ public class LoadingView extends View {
                 mBaseIndicator = new BallPulseIndicator();
                 break;
             case BallGridPulse:
+                mBaseIndicator = new BallGridPulseIndicator();
                 break;
             case BallClipRotate:
+                mBaseIndicator = new BallClipRotateIndicator();
                 break;
             case BallClipRotatePulse:
                 break;

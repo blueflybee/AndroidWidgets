@@ -14,5 +14,5 @@
     <changjiashuai.widgets.LoadingView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:indicator="BallPulse"/>
+            app:indicator="BallGridPulse"/>
 </RelativeLayout>
