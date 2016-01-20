@@ -1,4 +1,4 @@
-package changjiashuai.widgets;
+package io.github.changjiashuai.widgets;
 
 import org.junit.Test;
 

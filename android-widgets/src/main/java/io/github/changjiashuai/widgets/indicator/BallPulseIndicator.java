@@ -1,4 +1,4 @@
-package changjiashuai.widgets.indicator;
+package io.github.changjiashuai.widgets.indicator;
 
 import android.animation.Animator;
 import android.animation.ValueAnimator;

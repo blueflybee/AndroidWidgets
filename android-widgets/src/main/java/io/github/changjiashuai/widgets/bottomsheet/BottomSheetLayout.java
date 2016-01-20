@@ -1,4 +1,4 @@
-package changjiashuai.widgets.bottomsheet;
+package io.github.changjiashuai.widgets.bottomsheet;
 
 import android.annotation.TargetApi;
 import android.content.Context;

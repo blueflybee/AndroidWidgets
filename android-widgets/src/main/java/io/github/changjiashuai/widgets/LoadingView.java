@@ -1,4 +1,4 @@
-package changjiashuai.widgets;
+package io.github.changjiashuai.widgets;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -12,10 +12,10 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import changjiashuai.utils.DensityUtils;
-import changjiashuai.widgets.indicator.BallClipRotateIndicator;
-import changjiashuai.widgets.indicator.BallGridPulseIndicator;
-import changjiashuai.widgets.indicator.BallPulseIndicator;
-import changjiashuai.widgets.indicator.BaseIndicator;
+import io.github.changjiashuai.widgets.indicator.BallClipRotateIndicator;
+import io.github.changjiashuai.widgets.indicator.BallGridPulseIndicator;
+import io.github.changjiashuai.widgets.indicator.BallPulseIndicator;
+import io.github.changjiashuai.widgets.indicator.BaseIndicator;
 
 /**
  *

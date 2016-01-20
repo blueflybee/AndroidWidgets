@@ -1,4 +1,4 @@
-package cjs.com.androidwidgets;
+package io.github.changjiashuai.androidwidgets;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

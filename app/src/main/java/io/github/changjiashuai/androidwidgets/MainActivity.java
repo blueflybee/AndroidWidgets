@@ -1,4 +1,4 @@
-package cjs.com.androidwidgets;
+package io.github.changjiashuai.androidwidgets;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
