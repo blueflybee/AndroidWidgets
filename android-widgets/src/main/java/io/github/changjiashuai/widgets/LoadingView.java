@@ -13,9 +13,13 @@ import android.view.View;
 
 import changjiashuai.utils.DensityUtils;
 import io.github.changjiashuai.widgets.indicator.BallClipRotateIndicator;
+import io.github.changjiashuai.widgets.indicator.BallClipRotateMultipleIndicator;
+import io.github.changjiashuai.widgets.indicator.BallClipRotatePulseIndicator;
 import io.github.changjiashuai.widgets.indicator.BallGridPulseIndicator;
 import io.github.changjiashuai.widgets.indicator.BallPulseIndicator;
+import io.github.changjiashuai.widgets.indicator.BallPulseRiseIndicator;
 import io.github.changjiashuai.widgets.indicator.BaseIndicator;
+import io.github.changjiashuai.widgets.indicator.SquareSpinIndicator;
 
 /**
  *
@@ -149,12 +153,16 @@ public class LoadingView extends View {
                 mBaseIndicator = new BallClipRotateIndicator();
                 break;
             case BallClipRotatePulse:
+                mBaseIndicator = new BallClipRotatePulseIndicator();
                 break;
             case SquareSpin:
+                mBaseIndicator = new SquareSpinIndicator();
                 break;
             case BallClipRotateMultiple:
+                mBaseIndicator = new BallClipRotateMultipleIndicator();
                 break;
             case BallPulseRise:
+                mBaseIndicator = new BallPulseRiseIndicator();
                 break;
             case BallRotate:
                 break;
@@ -210,7 +218,7 @@ public class LoadingView extends View {
     }
 
     private int measureDimension(int defaultSize, int measureSpec) {
-        int result = defaultSize;
+        int result;
         int specMode = MeasureSpec.getMode(measureSpec);
         int specSize = MeasureSpec.getSize(measureSpec);
         if (specMode == MeasureSpec.EXACTLY) {
