@@ -12,14 +12,35 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import changjiashuai.utils.DensityUtils;
+import io.github.changjiashuai.widgets.indicator.BallBeatIndicator;
 import io.github.changjiashuai.widgets.indicator.BallClipRotateIndicator;
 import io.github.changjiashuai.widgets.indicator.BallClipRotateMultipleIndicator;
 import io.github.changjiashuai.widgets.indicator.BallClipRotatePulseIndicator;
+import io.github.changjiashuai.widgets.indicator.BallGridBeatIndicator;
 import io.github.changjiashuai.widgets.indicator.BallGridPulseIndicator;
 import io.github.changjiashuai.widgets.indicator.BallPulseIndicator;
 import io.github.changjiashuai.widgets.indicator.BallPulseRiseIndicator;
+import io.github.changjiashuai.widgets.indicator.BallPulseSyncIndicator;
+import io.github.changjiashuai.widgets.indicator.BallRotateIndicator;
+import io.github.changjiashuai.widgets.indicator.BallScaleIndicator;
+import io.github.changjiashuai.widgets.indicator.BallScaleMultipleIndicator;
+import io.github.changjiashuai.widgets.indicator.BallScaleRippleIndicator;
+import io.github.changjiashuai.widgets.indicator.BallScaleRippleMultipleIndicator;
+import io.github.changjiashuai.widgets.indicator.BallSpinFadeLoaderIndicator;
+import io.github.changjiashuai.widgets.indicator.BallTrianglePathIndicator;
+import io.github.changjiashuai.widgets.indicator.BallZigZagDeflectIndicator;
+import io.github.changjiashuai.widgets.indicator.BallZigZagIndicator;
 import io.github.changjiashuai.widgets.indicator.BaseIndicator;
+import io.github.changjiashuai.widgets.indicator.CubeTranslationIndicator;
+import io.github.changjiashuai.widgets.indicator.LineScaleIndicator;
+import io.github.changjiashuai.widgets.indicator.LineScalePartyIndicator;
+import io.github.changjiashuai.widgets.indicator.LineScalePulseOutIndicator;
+import io.github.changjiashuai.widgets.indicator.LineScalePulseOutRapidIndicator;
+import io.github.changjiashuai.widgets.indicator.LineSpinFadeLoaderIndicator;
+import io.github.changjiashuai.widgets.indicator.PacmanIndicator;
+import io.github.changjiashuai.widgets.indicator.SemiCircleSpinIndicator;
 import io.github.changjiashuai.widgets.indicator.SquareSpinIndicator;
+import io.github.changjiashuai.widgets.indicator.TriangleSkewSpinIndicator;
 
 /**
  *
@@ -165,46 +186,67 @@ public class LoadingView extends View {
                 mBaseIndicator = new BallPulseRiseIndicator();
                 break;
             case BallRotate:
+                mBaseIndicator = new BallRotateIndicator();
                 break;
             case CubeTransition:
+                mBaseIndicator = new CubeTranslationIndicator();
                 break;
             case BallZigZag:
+                mBaseIndicator = new BallZigZagIndicator();
                 break;
             case BallZigZagDeflect:
+                mBaseIndicator = new BallZigZagDeflectIndicator();
                 break;
             case BallTrianglePath:
+                mBaseIndicator = new BallTrianglePathIndicator();
                 break;
             case BallScale:
+                mBaseIndicator = new BallScaleIndicator();
                 break;
             case LineScale:
+                mBaseIndicator = new LineScaleIndicator();
                 break;
             case LineScaleParty:
+                mBaseIndicator = new LineScalePartyIndicator();
                 break;
             case BallScaleMultiple:
+                mBaseIndicator = new BallScaleMultipleIndicator();
                 break;
             case BallPulseSync:
+                mBaseIndicator = new BallPulseSyncIndicator();
                 break;
             case BallBeat:
+                mBaseIndicator = new BallBeatIndicator();
                 break;
             case LineScalePulseOut:
+                mBaseIndicator = new LineScalePulseOutIndicator();
                 break;
             case LineScalePulseOutRapid:
+                mBaseIndicator = new LineScalePulseOutRapidIndicator();
                 break;
             case BallScaleRipple:
+                mBaseIndicator = new BallScaleRippleIndicator();
                 break;
             case BallScaleRippleMultiple:
+                mBaseIndicator = new BallScaleRippleMultipleIndicator();
                 break;
             case BallSpinFadeLoader:
+                mBaseIndicator = new BallSpinFadeLoaderIndicator();
                 break;
             case LineSpinFadeLoader:
+                mBaseIndicator = new LineSpinFadeLoaderIndicator();
                 break;
             case TriangleSkewSpin:
+                mBaseIndicator = new TriangleSkewSpinIndicator();
                 break;
             case Pacman:
+                mBaseIndicator = new PacmanIndicator();
                 break;
             case BallGridBeat:
+                mBaseIndicator = new BallGridBeatIndicator();
                 break;
             case SemiCircleSpin:
+                mBaseIndicator = new SemiCircleSpinIndicator();
                 break;
         }
         mBaseIndicator.setTarget(this);
